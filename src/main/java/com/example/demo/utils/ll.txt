@@ -1,0 +1,19 @@
+1、为啥加事务
+    1、{1、get            3、 expire  10 }
+                key:value
+    1、{ 2、get           4、  expire  10 }
+
+
+     {1、get            2、 expire  10 }
+                  key:value
+     { 3、get           4、  expire  10 }
+
+
+ 1、watch 检测key是否被改变。
+
+ Redis Watch 命令用于监视一个(或多个) key ，如果在事务执行之前这个(或这些) key 被其他命令所改动，那么事务将被打断
+
+apifox
+
+
+

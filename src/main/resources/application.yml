@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: 110.42.229.44
+    port: 6379
+    password:
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 30
+        max-wait: PT10S
+        max-active: 10
+
