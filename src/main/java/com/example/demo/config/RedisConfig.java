@@ -30,7 +30,7 @@ public class RedisConfig {
     public Redisson redisson() {
         // 此为单机模式
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://110.42.229.44:6379");
+        config.useSingleServer().setAddress("redis://127.0.0.1:6379");
         /*config.useClusterServers()
                 .addNodeAddress("redis://192.168.73.130:8001")
                 .addNodeAddress("redis://192.168.73.131:8002")
